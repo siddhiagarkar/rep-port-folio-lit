@@ -1,37 +1,28 @@
-import AchievementCard from "@/components/AchievementCard";
-import { Trophy, Award, BookOpen, Users } from "lucide-react";
-
 export default function Achievements() {
   const achievements = [
     {
-      icon: Trophy,
       title: "JEE Advanced Qualified",
-      description: "All India Rank of 25,123 in one of India's most competitive engineering entrance examinations (2021).",
+      detail: "All India Rank of 25,123 (2021)",
     },
     {
-      icon: Award,
       title: "MHT-CET 98.6 Percentile",
-      description: "Secured 98.6 percentile on State Competitive exam with 99.2 percentile in Mathematics (2021).",
+      detail: "State exam with 99.2 percentile in Mathematics (2021)",
     },
     {
-      icon: BookOpen,
       title: "JEE Mains 97.1 Percentile",
-      description: "All India percentile of 97.1 with rank 26,984 in JEE Mains examination (2021).",
+      detail: "All India percentile with rank 26,984 (2021)",
     },
     {
-      icon: Award,
       title: "GRE Score 313",
-      description: "Achieved GRE score of 313 with Quant: 161 and Verbal: 152.",
+      detail: "Quant: 161, Verbal: 152",
     },
     {
-      icon: Users,
       title: "School Prefect",
-      description: "Served as School Prefect, demonstrating leadership and responsibility (2019).",
+      detail: "Leadership and responsibility (2019)",
     },
     {
-      icon: BookOpen,
       title: "Algorithmic Toolbox Certification",
-      description: "Earned certification from UC San Diego via Coursera (2025).",
+      detail: "UC San Diego via Coursera (2025)",
     },
   ];
 
@@ -60,10 +51,13 @@ export default function Achievements() {
         </div>
 
         <section className="mb-20">
-          <h2 className="text-3xl font-normal mb-8">Academic Achievements</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-normal mb-10">Academic Achievements</h2>
+          <div className="space-y-10">
             {achievements.map((achievement, index) => (
-              <AchievementCard key={index} {...achievement} />
+              <div key={index} data-testid={`achievement-${index}`}>
+                <h3 className="text-2xl font-normal mb-2 text-foreground">{achievement.title}</h3>
+                <p className="text-base text-muted-foreground font-light">{achievement.detail}</p>
+              </div>
             ))}
           </div>
         </section>
