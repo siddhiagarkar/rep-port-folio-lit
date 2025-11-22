@@ -17,27 +17,34 @@ export default function PortfolioSidebar() {
   const [location] = useLocation();
 
   return (
-    <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-border flex flex-col z-50 hidden lg:flex overflow-hidden">
-      {/* Ocean Background with Nemo */}
-      <div className="relative h-48 w-full overflow-hidden">
-        <img 
-          src={oceanImg} 
-          alt="Ocean background" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90" />
-      </div>
-
-      {/* Logo Section */}
-      <div className="px-6 py-6 border-b border-border -mt-8 relative z-10 bg-white">
-        <div className="mb-3" data-testid="logo-sa">
-          <div className="text-2xl font-light tracking-widest" style={{ letterSpacing: '0.15em' }}>
-            <span className="font-serif" style={{ fontSize: '1.5em', fontStyle: 'italic', fontWeight: '300' }}>S</span><span style={{ fontSize: '0.9em', fontWeight: '300', marginLeft: '-0.1em' }}>A</span>
+    <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-border flex flex-col z-50 hidden lg:flex">
+      {/* Logo Section with Ocean Background */}
+      <div 
+        className="px-6 py-8 border-b border-border relative overflow-hidden"
+        style={{
+          backgroundImage: `url(${oceanImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          minHeight: '160px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center'
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
+        
+        {/* Content */}
+        <div className="relative z-10">
+          <div className="mb-3" data-testid="logo-sa">
+            <div className="text-2xl font-light tracking-widest text-white" style={{ letterSpacing: '0.15em' }}>
+              <span className="font-serif" style={{ fontSize: '1.5em', fontStyle: 'italic', fontWeight: '300' }}>S</span><span style={{ fontSize: '0.9em', fontWeight: '300', marginLeft: '-0.1em' }}>A</span>
+            </div>
           </div>
+          <p className="text-sm text-white/90 tracking-wider uppercase font-light">
+            Software Engineer
+          </p>
         </div>
-        <p className="text-sm text-muted-foreground tracking-wider uppercase font-light">
-          Software Engineer
-        </p>
       </div>
 
       {/* Navigation */}
