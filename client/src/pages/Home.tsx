@@ -47,7 +47,7 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-lg">
+            <div className="relative w-72 h-96 rounded-lg overflow-hidden shadow-lg">
               <img
                 src={profileImg}
                 alt="Siddhi Agarkar"

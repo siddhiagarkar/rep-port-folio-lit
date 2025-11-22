@@ -87,6 +87,10 @@ export default {
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
       },
+      fontWeight: {
+        light: "400",
+        normal: "500",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

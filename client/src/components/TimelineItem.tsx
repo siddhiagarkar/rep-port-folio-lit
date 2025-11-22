@@ -5,6 +5,7 @@ interface TimelineItemProps {
   description?: string;
   details?: string[];
   isLast?: boolean;
+  logo?: string;
 }
 
 export default function TimelineItem({
@@ -14,11 +15,18 @@ export default function TimelineItem({
   description,
   details,
   isLast = false,
+  logo,
 }: TimelineItemProps) {
   return (
     <div className="relative flex gap-8 pb-12" data-testid={`timeline-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className="flex flex-col items-center">
-        <div className="w-4 h-4 rounded-full bg-gradient-to-r from-primary to-chart-2 z-10" />
+        {logo ? (
+          <div className="w-12 h-12 rounded-full bg-white border-2 border-border flex items-center justify-center overflow-hidden z-10 shadow-sm">
+            <img src={logo} alt={`${title} logo`} className="w-full h-full object-contain p-1" />
+          </div>
+        ) : (
+          <div className="w-4 h-4 rounded-full bg-gradient-to-r from-primary to-chart-2 z-10" />
+        )}
         {!isLast && <div className="w-0.5 flex-1 bg-border mt-2" />}
       </div>
 

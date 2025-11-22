@@ -2,6 +2,13 @@ import TimelineItem from "@/components/TimelineItem";
 import { Badge } from "@/components/ui/badge";
 
 export default function Experience() {
+  // TODO: Replace these placeholder logos with actual company logos
+  // You can place logo files in attached_assets/ and import them like:
+  // import xtremsoftLogo from '@assets/xtremsoft-logo.png';
+  // import adobeLogo from '@assets/adobe-logo.png';
+  const xtremsoftLogo = "https://via.placeholder.com/100x100/4A90E2/ffffff?text=XT";
+  const adobeLogo = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/512px-Adobe_Systems_logo_and_wordmark.svg.png";
+
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-4xl mx-auto">
@@ -17,6 +24,7 @@ export default function Experience() {
             year="September – December 2025"
             title="XtremSoft Technologies, Mumbai"
             subtitle="Full-Stack Developer Intern"
+            logo={xtremsoftLogo}
             details={[
               "Spearheading a full-stack system to automate client-employee appointment booking, replacing manual Slack/WhatsApp processes",
               "Engineering a conversational interface to qualify client needs and dynamically route them to the correct employee",
@@ -37,6 +45,7 @@ export default function Experience() {
             year="May – July 2024"
             title="Adobe, Bangalore"
             subtitle="Backend Engineering Intern"
+            logo={adobeLogo}
             details={[
               "Designed and deployed Prometheus & built dashboards on Grafana to create an optimized monitoring system for a microservice",
               "Boosted query speed by 40%, slashed costs by 30%, extended data retention by 6x, and delivered superior visualization with 98% accuracy",
