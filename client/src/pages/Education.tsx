@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import TimelineItem from "@/components/TimelineItem";
+import PageHeader from "@/components/PageHeader";
 
 export default function Education() {
   const educationData = [
@@ -30,17 +31,10 @@ export default function Education() {
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-4xl mx-auto">
-        <motion.div 
-          className="mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-4">Education</h1>
-          <p className="text-lg text-muted-foreground font-light leading-relaxed">
-            Academic journey and qualifications
-          </p>
-        </motion.div>
+        <PageHeader 
+          title="Education" 
+          subtitle="Academic journey and qualifications"
+        />
 
         <motion.div 
           className="space-y-0"

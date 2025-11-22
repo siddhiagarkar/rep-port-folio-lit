@@ -1,4 +1,5 @@
 import TimelineItem from "@/components/TimelineItem";
+import PageHeader from "@/components/PageHeader";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 
@@ -9,17 +10,10 @@ export default function Experience() {
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-5xl mx-auto">
-        <motion.div 
-          className="mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-4">Experience</h1>
-          <p className="text-lg text-muted-foreground font-light leading-relaxed">
-            Professional internships and work experience
-          </p>
-        </motion.div>
+        <PageHeader 
+          title="Experience" 
+          subtitle="Professional internships and work experience"
+        />
 
         <div className="space-y-20">
           {/* XtremSoft Experience */}

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MapPin, Linkedin, Github, Globe } from "lucide-react";
+import PageHeader from "@/components/PageHeader";
 
 export default function Contact() {
   const contactInfo = [
@@ -38,12 +39,10 @@ export default function Contact() {
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-16">
-          <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-4">Contact</h1>
-          <p className="text-lg text-muted-foreground font-light leading-relaxed">
-            Let's connect and discuss opportunities
-          </p>
-        </div>
+        <PageHeader 
+          title="Contact" 
+          subtitle="Let's connect and discuss opportunities"
+        />
 
         <div className="space-y-8">
           <section>

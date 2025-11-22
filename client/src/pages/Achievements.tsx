@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PageHeader from "@/components/PageHeader";
 
 export default function Achievements() {
   const achievements = [
@@ -100,19 +101,10 @@ export default function Achievements() {
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
-          className="mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-4">
-            Achievements & Activities
-          </h1>
-          <p className="text-lg text-muted-foreground font-light leading-relaxed">
-            Awards, certifications, and extra-curricular involvement
-          </p>
-        </motion.div>
+        <PageHeader 
+          title="Achievements & Activities" 
+          subtitle="Awards, certifications, and extra-curricular involvement"
+        />
 
         <motion.section 
           className="mb-20"

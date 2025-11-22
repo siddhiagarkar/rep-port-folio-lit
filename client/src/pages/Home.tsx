@@ -6,10 +6,11 @@ import profileImg from '@assets/WhatsApp Image 2025-11-22 at 6.41.41 PM (1)_1763
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <section className="min-h-[80vh] flex items-center px-8 md:px-16 lg:px-24 py-24">
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+      <section className="min-h-screen flex items-center px-0 md:px-0 lg:px-0 py-24">
+        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+          {/* Left Content */}
           <motion.div 
-            className="lg:col-span-3 space-y-6"
+            className="space-y-6 px-8 md:px-16 lg:px-24"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -41,13 +42,14 @@ export default function Home() {
             </div>
           </motion.div>
 
+          {/* Right Image - Full Height */}
           <motion.div 
-            className="lg:col-span-2 flex justify-center lg:justify-end"
+            className="hidden lg:flex h-screen justify-stretch items-stretch"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative w-72 h-96 rounded-lg overflow-hidden shadow-lg">
+            <div className="w-full h-full overflow-hidden">
               <img
                 src={profileImg}
                 alt="Siddhi Agarkar"
@@ -56,6 +58,22 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
+
+        {/* Mobile Image - Full Width Below Content */}
+        <motion.div 
+          className="lg:hidden w-full px-0"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="w-full h-96 overflow-hidden">
+            <img
+              src={profileImg}
+              alt="Siddhi Agarkar"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
       </section>
 
       <section className="px-8 md:px-16 lg:px-24 py-16 bg-muted/30">
