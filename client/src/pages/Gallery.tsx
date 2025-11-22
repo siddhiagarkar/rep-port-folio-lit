@@ -1,14 +1,30 @@
 import { motion } from "framer-motion";
 import PhotoGallery from "@/components/PhotoGallery";
-import skitImg from '@assets/generated_images/school_skit_performance_photo.png';
-import marchPastImg from '@assets/generated_images/march_past_ceremony_photo.png';
-import volunteeringImg from '@assets/generated_images/volunteering_activity_photo.png';
+import lectureImg from '@assets/WhatsApp Image 2025-11-22 at 9.35.27 PM_1763827867065.jpeg';
+import speakingImg from '@assets/WhatsApp Image 2025-11-22 at 9.33.11 PM_1763827867066.jpeg';
+import nitJacketImg from '@assets/WhatsApp Image 2025-11-22 at 9.31.02 PM_1763827867067.jpeg';
+import nitBuildingImg from '@assets/WhatsApp Image 2025-11-22 at 9.29.00 PM_1763827867067.jpeg';
+import posterArtImg from '@assets/WhatsApp Image 2025-11-22 at 9.27.12 PM_1763827867067.jpeg';
+import natureImg from '@assets/WhatsApp Image 2025-11-22 at 9.16.15 PM_1763827867068.jpeg';
+import ropeActivityImg from '@assets/WhatsApp Image 2025-11-22 at 9.14.00 PM_1763827867068.jpeg';
+import schoolSportsImg from '@assets/WhatsApp Image 2025-11-22 at 9.13.12 PM_1763827867068.jpeg';
+import medalImg from '@assets/WhatsApp Image 2025-11-22 at 9.07.29 PM_1763827867069.jpeg';
+import nitSignImg from '@assets/WhatsApp Image 2025-11-22 at 9.06.56 PM_1763827867069.jpeg';
+import conferenceImg from '@assets/WhatsApp Image 2025-11-22 at 9.10.05 PM_1763827867069.jpeg';
 
 export default function Gallery() {
   const photos = [
-    { src: skitImg, alt: 'School skit performance', caption: 'Theatrical Skit Performance' },
-    { src: marchPastImg, alt: 'March past ceremony', caption: 'March Past Ceremony' },
-    { src: volunteeringImg, alt: 'Volunteering activity', caption: 'Community Service & Volunteering' },
+    { src: lectureImg, alt: 'Presenting at lecture hall', caption: 'Open Source Workshop - Mentoring Freshmen' },
+    { src: speakingImg, alt: 'Speaking with microphone', caption: 'LinkedIn Content Creator & Public Speaking' },
+    { src: nitBuildingImg, alt: 'NIT Durgapur campus', caption: 'NIT Durgapur - Campus Life' },
+    { src: nitSignImg, alt: 'NIT Durgapur entrance', caption: 'National Institute of Technology Durgapur' },
+    { src: medalImg, alt: 'Holding athletic medal', caption: 'Athletics Achievement - Medal Win' },
+    { src: schoolSportsImg, alt: 'School sports team', caption: '4x100m Relay Champion - ASHA 2020' },
+    { src: ropeActivityImg, alt: 'Adventure rope activity', caption: 'Rock Climbing & Adventure Sports' },
+    { src: nitJacketImg, alt: 'NIT Durgapur jacket', caption: 'NIT Durgapur - Pride & Identity' },
+    { src: posterArtImg, alt: 'Creative poster art', caption: 'Senior Fest Coordinator - Aarohan 2025' },
+    { src: conferenceImg, alt: 'Conference event', caption: 'Networking & Professional Events' },
+    { src: natureImg, alt: 'Outdoor nature photo', caption: 'Adventure & Outdoor Activities' },
   ];
 
   return (
