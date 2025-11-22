@@ -88,8 +88,11 @@ export default {
         mono: ["var(--font-mono)"],
       },
       fontWeight: {
-        light: "400",
-        normal: "500",
+        light: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
       },
       keyframes: {
         "accordion-down": {
