@@ -55,15 +55,15 @@ export default function Education() {
                 {!edu.isLast && <div className="w-0.5 flex-1 bg-border mt-2" />}
               </div>
 
-              <div className="flex-1 -mt-1">
-                <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-2">
+              <div className="flex-1 -mt-1 bg-slate-800 dark:bg-slate-900 text-white dark:text-slate-100 p-6 rounded-lg">
+                <div className="text-xs text-slate-300 dark:text-slate-400 tracking-wider uppercase font-light mb-2">
                   {edu.year}
                 </div>
-                <h3 className="text-2xl font-normal mb-1">{edu.title}</h3>
-                <p className="text-sm text-muted-foreground font-light italic mb-2">{edu.location}</p>
-                <p className="text-lg text-muted-foreground font-light mb-2">{edu.subtitle}</p>
-                <p className="text-base text-foreground/80 font-light leading-relaxed mb-3">
-                  <span className="font-semibold">{edu.score}</span>
+                <h3 className="text-2xl font-normal mb-1 text-white dark:text-slate-50">{edu.title}</h3>
+                <p className="text-sm text-slate-300 dark:text-slate-400 font-light italic mb-2">{edu.location}</p>
+                <p className="text-lg text-slate-200 dark:text-slate-300 font-light mb-2">{edu.subtitle}</p>
+                <p className="text-base text-slate-100 dark:text-slate-200 font-light leading-relaxed mb-3">
+                  <span className="font-semibold text-slate-50 dark:text-white">{edu.score}</span>
                 </p>
               </div>
             </div>

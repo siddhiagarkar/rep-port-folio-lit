@@ -91,6 +91,14 @@ export default function Skills() {
               "Marathi",
             ]}
           />
+          <SkillCategory
+            title="Standardized Tests"
+            icon={Code}
+            accentColor="text-amber-600"
+            skills={[
+              "TOEFL - 106/120",
+            ]}
+          />
         </motion.div>
       </div>
     </div>

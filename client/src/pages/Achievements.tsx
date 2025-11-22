@@ -58,8 +58,8 @@ export default function Achievements() {
                 data-testid={`achievement-${index}`}
                 className="flex items-start gap-4 py-3"
               >
-                <span className="text-primary font-light mt-1">•</span>
-                <p className="text-base text-foreground/80 font-light leading-relaxed">
+                <span className="text-primary font-bold text-lg mt-0.5">→</span>
+                <p className="text-lg text-foreground/85 font-light leading-relaxed">
                   {achievement}
                 </p>
               </motion.div>
@@ -85,8 +85,8 @@ export default function Achievements() {
                 data-testid={`activity-${index}`}
                 className="flex items-start gap-4 py-3"
               >
-                <span className="text-primary font-light mt-1">•</span>
-                <p className="text-base text-foreground/80 font-light leading-relaxed">
+                <span className="text-primary font-bold text-lg mt-0.5">→</span>
+                <p className="text-lg text-foreground/85 font-light leading-relaxed">
                   {activity}
                 </p>
               </motion.div>

@@ -32,7 +32,15 @@ export default function MobileNav() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/40" />
         
         {/* Content */}
-        <h1 className="text-xl font-normal tracking-wide text-white relative z-10">Siddhi Agarkar</h1>
+        <div className="relative z-10 flex items-center gap-2">
+          <div className="text-sm font-light tracking-widest text-white">
+            <span className="font-serif" style={{ fontSize: '1.2em', fontStyle: 'italic', fontWeight: '300' }}>S</span><span style={{ fontSize: '0.7em', fontWeight: '300', marginLeft: '-0.05em' }}>A</span>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xs text-white/80 tracking-wider uppercase font-light leading-none">Keep</p>
+            <p className="text-xs text-white/80 tracking-wider uppercase font-light leading-none">Swimming</p>
+          </div>
+        </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="p-2 hover-elevate rounded-md text-white relative z-10"

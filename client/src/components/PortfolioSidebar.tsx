@@ -42,7 +42,7 @@ export default function PortfolioSidebar() {
             </div>
           </div>
           <p className="text-sm text-white/90 tracking-wider uppercase font-light">
-            Software Engineer
+            Keep Swimming
           </p>
         </div>
       </div>

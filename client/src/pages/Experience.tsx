@@ -74,7 +74,7 @@ export default function Experience() {
                   </ul>
                 </Card>
               </div>
-              <div className="mt-6">
+              <div className="mt-6 pb-12">
                 <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-3">Tech Stack</div>
                 <div className="flex flex-wrap gap-3">
                   {["Node.js", "Express.js", "MongoDB", "Redis"].map((tech) => (
