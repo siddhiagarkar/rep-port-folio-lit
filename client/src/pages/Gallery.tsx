@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import PhotoGallery from "@/components/PhotoGallery";
-import PageHeader from "@/components/PageHeader";
 import skitImg from '@assets/generated_images/school_skit_performance_photo.png';
 import marchPastImg from '@assets/generated_images/march_past_ceremony_photo.png';
 import volunteeringImg from '@assets/generated_images/volunteering_activity_photo.png';
@@ -15,10 +14,17 @@ export default function Gallery() {
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-7xl mx-auto">
-        <PageHeader 
-          title="Gallery" 
-          subtitle="Moments from my extra-curricular activities and life at NIT Durgapur"
-        />
+        <motion.div 
+          className="mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-4">Gallery</h1>
+          <p className="text-lg text-muted-foreground font-light leading-relaxed">
+            Moments from my extra-curricular activities and life at NIT Durgapur
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

@@ -1,5 +1,6 @@
 import { Home, GraduationCap, Briefcase, Code, Award, Wrench, Mail, Image } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import oceanImg from '@assets/generated_images/ocean_underwater_scene_with_nemo_clownfish.png';
 
 const navItems = [
   { title: "Home", icon: Home, path: "/" },
@@ -16,8 +17,19 @@ export default function PortfolioSidebar() {
   const [location] = useLocation();
 
   return (
-    <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-border flex flex-col z-50 hidden lg:flex">
-      <div className="py-8 px-6 border-b border-border">
+    <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-border flex flex-col z-50 hidden lg:flex overflow-hidden">
+      {/* Ocean Background with Nemo */}
+      <div className="relative h-48 w-full overflow-hidden">
+        <img 
+          src={oceanImg} 
+          alt="Ocean background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90" />
+      </div>
+
+      {/* Logo Section */}
+      <div className="px-6 py-6 border-b border-border -mt-8 relative z-10 bg-white">
         <div className="mb-3" data-testid="logo-sa">
           <div className="text-2xl font-light tracking-widest" style={{ letterSpacing: '0.15em' }}>
             <span className="font-serif" style={{ fontSize: '1.5em', fontStyle: 'italic', fontWeight: '300' }}>S</span><span style={{ fontSize: '0.9em', fontWeight: '300', marginLeft: '-0.1em' }}>A</span>
@@ -28,6 +40,7 @@ export default function PortfolioSidebar() {
         </p>
       </div>
 
+      {/* Navigation */}
       <nav className="flex-1 py-4">
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -53,6 +66,7 @@ export default function PortfolioSidebar() {
         })}
       </nav>
 
+      {/* Social Links */}
       <div className="py-6 px-6 border-t border-border">
         <div className="flex gap-4">
           <a
