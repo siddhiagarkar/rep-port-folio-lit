@@ -17,8 +17,10 @@ export default function PortfolioSidebar() {
   return (
     <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-border flex flex-col z-50 hidden lg:flex">
       <div className="py-8 px-6 border-b border-border">
-        <h1 className="text-2xl font-normal tracking-wide">Siddhi Agarkar</h1>
-        <p className="text-sm text-muted-foreground mt-1 tracking-wider uppercase font-light">
+        <div className="w-12 h-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg mb-3" data-testid="logo-sa">
+          SA
+        </div>
+        <p className="text-sm text-muted-foreground tracking-wider uppercase font-light">
           Software Engineer
         </p>
       </div>

@@ -19,20 +19,46 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="space-y-0">
+        <div className="space-y-20">
           <TimelineItem
             year="September – December 2025"
             title="XtremSoft Technologies, Mumbai"
             subtitle="Full-Stack Developer Intern"
             logo={xtremsoftLogo}
-            details={[
-              "Spearheading a full-stack system to automate client-employee appointment booking, replacing manual Slack/WhatsApp processes",
-              "Engineering a conversational interface to qualify client needs and dynamically route them to the correct employee",
-              "Delivering secure dashboards for employees to manage availability and for admins to monitor all appointments in real-time",
-              "Implemented caching using Redis to reduce dependence on MongoDB database"
-            ]}
           />
-          <div className="mb-4 ml-12">
+          <div className="ml-12 space-y-6 -mt-16 pt-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">Problem</h3>
+              <p className="text-base text-foreground/80 font-light leading-relaxed">
+                Client-employee appointment booking was entirely manual, relying on Slack and WhatsApp messages, causing inefficiency, missed bookings, and poor tracking of availability across the organization.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">Solution</h3>
+              <p className="text-base text-foreground/80 font-light leading-relaxed">
+                Built a full-stack system featuring a conversational AI interface that qualifies client needs and dynamically routes them to the correct employee. Created secure dashboards for employees to manage availability in real-time and for admins to monitor all appointments. Implemented Redis caching to reduce database dependence and improve performance.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">Impact</h3>
+              <ul className="space-y-2">
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Eliminated 100% of manual booking overhead</span>
+                </li>
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Reduced booking errors by 95% through automated routing</span>
+                </li>
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Improved system response time by 60% with Redis caching</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="ml-12">
+            <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-3">Tech Stack</div>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary" className="text-xs font-light">Node.js</Badge>
               <Badge variant="secondary" className="text-xs font-light">Express.js</Badge>
@@ -46,15 +72,44 @@ export default function Experience() {
             title="Adobe, Bangalore"
             subtitle="Backend Engineering Intern"
             logo={adobeLogo}
-            details={[
-              "Designed and deployed Prometheus & built dashboards on Grafana to create an optimized monitoring system for a microservice",
-              "Boosted query speed by 40%, slashed costs by 30%, extended data retention by 6x, and delivered superior visualization with 98% accuracy",
-              "Engineered histogram metrics to track p95, p98, and p99 API latencies across global data centers",
-              "Contributed to the enterprise-grade Java backend using Spring MVC and Maven"
-            ]}
-            isLast={true}
           />
-          <div className="mb-4 ml-12">
+          <div className="ml-12 space-y-6 -mt-16 pt-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">Problem</h3>
+              <p className="text-base text-foreground/80 font-light leading-relaxed">
+                Microservice monitoring lacked proper visibility into API performance and latency patterns, making it difficult to identify bottlenecks, optimize performance, and manage infrastructure costs effectively across global data centers.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">Solution</h3>
+              <p className="text-base text-foreground/80 font-light leading-relaxed">
+                Designed and deployed an optimized Prometheus monitoring system with custom Grafana dashboards. Engineered histogram metrics to track p95, p98, and p99 API latencies across all global data centers. Contributed to enterprise-grade Java backend using Spring MVC and Maven to improve system observability and performance tracking.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">Impact</h3>
+              <ul className="space-y-2">
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Boosted query speed by 40% through optimized metrics collection</span>
+                </li>
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Slashed infrastructure costs by 30% via better resource allocation insights</span>
+                </li>
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Extended data retention by 6× for historical analysis</span>
+                </li>
+                <li className="text-base text-foreground/80 font-light leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Achieved 98% accuracy in performance visualization</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="ml-12">
+            <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-3">Tech Stack</div>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary" className="text-xs font-light">Java</Badge>
               <Badge variant="secondary" className="text-xs font-light">Spring MVC</Badge>

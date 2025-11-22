@@ -15,8 +15,8 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-wide">
-                Siddhi Agarkar
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide">
+                Siddhi Sunil Agarkar
               </h1>
               <p className="text-2xl md:text-3xl text-muted-foreground font-light tracking-wide">
                 Software Engineer & Problem Solver
@@ -28,13 +28,8 @@ export default function Home() {
               solutions that make a real impact.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link href="/projects">
-                <Button size="lg" data-testid="button-view-projects">
-                  View Projects
-                </Button>
-              </Link>
               <a href="/attached_assets/Siddhi Agarkar_Resume_Review_1763814617656.pdf" download>
-                <Button size="lg" variant="outline" data-testid="button-download-resume">
+                <Button size="lg" data-testid="button-download-resume">
                   Download Resume
                 </Button>
               </a>
