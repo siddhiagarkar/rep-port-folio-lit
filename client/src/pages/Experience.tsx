@@ -2,8 +2,10 @@ import TimelineItem from "@/components/TimelineItem";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 
+import xtremsoftImg from '@assets/image_1763824446388.png';
+
 export default function Experience() {
-  const xtremsoftLogo = "https://via.placeholder.com/100x100/4A90E2/ffffff?text=XT";
+  const xtremsoftLogo = xtremsoftImg;
   const adobeLogo = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/512px-Adobe_Systems_logo_and_wordmark.svg.png";
 
   return (
@@ -21,7 +23,7 @@ export default function Experience() {
           </p>
         </motion.div>
 
-        <div className="space-y-20">
+        <div className="space-y-0">
           {/* XtremSoft Experience */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -87,6 +89,7 @@ export default function Experience() {
 
           {/* Adobe Experience */}
           <motion.div
+            className="pt-0"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

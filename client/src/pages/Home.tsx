@@ -19,8 +19,8 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide">
                 Siddhi Sunil Agarkar
               </h1>
-              <p className="text-2xl md:text-3xl text-muted-foreground font-light tracking-wide">
-                Software Engineer & Problem Solver
+              <p className="text-2xl md:text-3xl text-teal-600 dark:text-teal-400 font-light tracking-wide">
+                Keep Swimming
               </p>
             </div>
             <p className="text-lg text-foreground/80 font-light leading-relaxed max-w-2xl">
@@ -28,7 +28,7 @@ export default function Home() {
               AI/ML systems, and cloud infrastructure. Passionate about building scalable 
               solutions that make a real impact.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4 pb-12">
               <a href="/attached_assets/Siddhi Agarkar_Review_1763814617656.pdf" download>
                 <Button 
                   size="lg" 
@@ -41,9 +41,8 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
-                  variant="outline" 
                   data-testid="button-linkedin"
-                  className="bg-white/5 hover:bg-white/15 text-foreground border border-white/20 hover:border-white/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:scale-105"
+                  className="bg-blue-600 hover:bg-blue-700 text-white backdrop-blur-sm border border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:scale-105"
                 >
                   LinkedIn
                 </Button>
