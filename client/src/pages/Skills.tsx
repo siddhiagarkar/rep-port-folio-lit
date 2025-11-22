@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SkillCategory from "@/components/SkillCategory";
-import { Code, Wrench, Database } from "lucide-react";
+import { Code, Wrench, Database, Zap, Globe } from "lucide-react";
 
 export default function Skills() {
   return (
@@ -31,6 +31,7 @@ export default function Skills() {
             skills={[
               "Python",
               "JavaScript",
+              "ReactJS",
               "C++",
               "HTML",
               "CSS",
@@ -67,6 +68,27 @@ export default function Skills() {
               "DBMS",
               "OOPs",
               "Computer Networks",
+            ]}
+          />
+          <SkillCategory
+            title="AI Tools"
+            icon={Zap}
+            accentColor="text-orange-600"
+            skills={[
+              "Claude",
+              "Comet",
+              "Bolt.AI",
+            ]}
+          />
+          <SkillCategory
+            title="Languages"
+            icon={Globe}
+            accentColor="text-rose-600"
+            skills={[
+              "English",
+              "Hindi",
+              "German",
+              "Marathi",
             ]}
           />
         </motion.div>

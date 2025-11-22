@@ -38,7 +38,7 @@ export default function Home() {
                   Download Resume
                 </Button>
               </a>
-              <a href="https://www.linkedin.com/in/siddhi-agarkar/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   variant="outline" 

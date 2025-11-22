@@ -8,9 +8,9 @@ const navItems = [
   { title: "Experience", icon: Briefcase, path: "/experience" },
   { title: "Projects", icon: Code, path: "/projects" },
   { title: "Achievements", icon: Award, path: "/achievements" },
-  { title: "Gallery", icon: Image, path: "/gallery" },
   { title: "Skills", icon: Wrench, path: "/skills" },
   { title: "Contact", icon: Mail, path: "/contact" },
+  { title: "Gallery", icon: Image, path: "/gallery" },
 ];
 
 export default function PortfolioSidebar() {
@@ -88,7 +88,7 @@ export default function PortfolioSidebar() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/siddhi-agarkar/"
+            href="https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Home, GraduationCap, Briefcase, Code, Award, Wrench, Mail } from "lucide-react";
+import { Menu, X, Home, GraduationCap, Briefcase, Code, Award, Wrench, Mail, Image } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import oceanImg from '@assets/generated_images/ocean_underwater_scene_with_nemo_clownfish.png';
 
@@ -11,6 +11,7 @@ const navItems = [
   { title: "Achievements", icon: Award, path: "/achievements" },
   { title: "Skills", icon: Wrench, path: "/skills" },
   { title: "Contact", icon: Mail, path: "/contact" },
+  { title: "Gallery", icon: Image, path: "/gallery" },
 ];
 
 export default function MobileNav() {
