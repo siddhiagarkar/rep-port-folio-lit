@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Home, GraduationCap, Briefcase, Code, Award, Wrench, Mail } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import oceanImg from '@assets/generated_images/ocean_underwater_scene_with_nemo_clownfish.png';
 
 const navItems = [
   { title: "Home", icon: Home, path: "/" },
@@ -18,11 +19,22 @@ export default function MobileNav() {
 
   return (
     <div className="lg:hidden">
-      <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-border flex items-center justify-between px-4 z-50">
-        <h1 className="text-xl font-normal tracking-wide">Siddhi Agarkar</h1>
+      <header 
+        className="fixed top-0 left-0 right-0 h-16 border-b border-border flex items-center justify-between px-4 z-50 relative overflow-hidden bg-white"
+        style={{
+          backgroundImage: `url(${oceanImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Ocean overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/40" />
+        
+        {/* Content */}
+        <h1 className="text-xl font-normal tracking-wide text-white relative z-10">Siddhi Agarkar</h1>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 hover-elevate rounded-md"
+          className="p-2 hover-elevate rounded-md text-white relative z-10"
           data-testid="button-menu-toggle"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

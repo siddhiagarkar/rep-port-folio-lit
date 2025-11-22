@@ -6,11 +6,11 @@ import profileImg from '@assets/WhatsApp Image 2025-11-22 at 6.41.41 PM (1)_1763
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <section className="min-h-screen flex items-center px-0 md:px-0 lg:px-0 py-24">
-        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+      <section className="min-h-screen flex items-center px-0 md:px-0 lg:px-0 py-16 lg:py-0">
+        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
           {/* Left Content */}
           <motion.div 
-            className="space-y-6 px-8 md:px-16 lg:px-24"
+            className="space-y-6 px-8 md:px-16 lg:px-24 flex flex-col justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -30,12 +30,21 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <a href="/attached_assets/Siddhi Agarkar_Review_1763814617656.pdf" download>
-                <Button size="lg" data-testid="button-download-resume">
+                <Button 
+                  size="lg" 
+                  data-testid="button-download-resume"
+                  className="bg-primary/90 hover:bg-primary/100 text-white backdrop-blur-sm border border-primary/20 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
                   Download Resume
                 </Button>
               </a>
               <a href="https://www.linkedin.com/in/siddhi-agarkar/" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" data-testid="button-linkedin">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  data-testid="button-linkedin"
+                  className="bg-white/5 hover:bg-white/15 text-foreground border border-white/20 hover:border-white/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
                   LinkedIn
                 </Button>
               </a>
@@ -44,16 +53,16 @@ export default function Home() {
 
           {/* Right Image - Full Height */}
           <motion.div 
-            className="hidden lg:flex h-screen justify-stretch items-stretch"
+            className="hidden lg:flex h-screen items-stretch"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="w-full h-full overflow-hidden">
+            <div className="w-full h-full flex items-center justify-center overflow-hidden">
               <img
                 src={profileImg}
                 alt="Siddhi Agarkar"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </motion.div>
@@ -61,16 +70,16 @@ export default function Home() {
 
         {/* Mobile Image - Full Width Below Content */}
         <motion.div 
-          className="lg:hidden w-full px-0"
+          className="lg:hidden w-full px-0 mt-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="w-full h-96 overflow-hidden">
+          <div className="w-full h-80 overflow-hidden flex items-center justify-center">
             <img
               src={profileImg}
               alt="Siddhi Agarkar"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </motion.div>
