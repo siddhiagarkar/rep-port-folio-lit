@@ -19,14 +19,14 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-12">
           <TimelineItem
             year="September – December 2025"
             title="XtremSoft Technologies, Mumbai"
             subtitle="Full-Stack Developer Intern"
             logo={xtremsoftLogo}
           />
-          <div className="ml-12 space-y-6 -mt-16 pt-8">
+          <div className="ml-12 space-y-4 -mt-8">
             <div>
               <h3 className="text-lg font-semibold mb-2 text-foreground">Problem</h3>
               <p className="text-base text-foreground/80 font-light leading-relaxed">
@@ -57,7 +57,7 @@ export default function Experience() {
               </ul>
             </div>
           </div>
-          <div className="ml-12">
+          <div className="ml-12 -mt-4 mb-8">
             <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-3">Tech Stack</div>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary" className="text-xs font-light">Node.js</Badge>
@@ -73,7 +73,7 @@ export default function Experience() {
             subtitle="Backend Engineering Intern"
             logo={adobeLogo}
           />
-          <div className="ml-12 space-y-6 -mt-16 pt-8">
+          <div className="ml-12 space-y-4 -mt-8">
             <div>
               <h3 className="text-lg font-semibold mb-2 text-foreground">Problem</h3>
               <p className="text-base text-foreground/80 font-light leading-relaxed">
@@ -108,7 +108,7 @@ export default function Experience() {
               </ul>
             </div>
           </div>
-          <div className="ml-12">
+          <div className="ml-12 -mt-4">
             <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-3">Tech Stack</div>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary" className="text-xs font-light">Java</Badge>

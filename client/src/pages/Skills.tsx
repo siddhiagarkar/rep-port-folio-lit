@@ -27,6 +27,7 @@ export default function Skills() {
           <SkillCategory
             title="Languages & Frameworks"
             icon={Code}
+            accentColor="text-primary"
             skills={[
               "Python",
               "JavaScript",
@@ -41,6 +42,7 @@ export default function Skills() {
           <SkillCategory
             title="Tools & Technologies"
             icon={Wrench}
+            accentColor="text-olive"
             skills={[
               "Prometheus",
               "Grafana",
@@ -56,6 +58,7 @@ export default function Skills() {
           <SkillCategory
             title="Concepts & Others"
             icon={Database}
+            accentColor="text-teal"
             skills={[
               "Data Structures",
               "Algorithms",

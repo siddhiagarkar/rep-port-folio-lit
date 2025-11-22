@@ -12,6 +12,7 @@ import Experience from "@/pages/Experience";
 import Projects from "@/pages/Projects";
 import ProjectDetail from "@/pages/ProjectDetail";
 import Achievements from "@/pages/Achievements";
+import Gallery from "@/pages/Gallery";
 import Skills from "@/pages/Skills";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
@@ -27,6 +28,7 @@ function Router() {
         <Route path="/projects" component={Projects} />
         <Route path="/projects/:id" component={ProjectDetail} />
         <Route path="/achievements" component={Achievements} />
+        <Route path="/gallery" component={Gallery} />
         <Route path="/skills" component={Skills} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />

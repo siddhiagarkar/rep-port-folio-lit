@@ -6,14 +6,15 @@ interface SkillCategoryProps {
   title: string;
   icon: LucideIcon;
   skills: string[];
+  accentColor?: string;
 }
 
-export default function SkillCategory({ title, icon: Icon, skills }: SkillCategoryProps) {
+export default function SkillCategory({ title, icon: Icon, skills, accentColor = "text-primary" }: SkillCategoryProps) {
   return (
     <Card data-testid={`card-skill-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <CardHeader className="pb-4">
-        <CardTitle className="flex items-center gap-3 text-xl font-normal">
-          <Icon className="w-5 h-5 text-primary" />
+        <CardTitle className={`flex items-center gap-3 text-xl font-normal`}>
+          <Icon className={`w-5 h-5 ${accentColor}`} />
           {title}
         </CardTitle>
       </CardHeader>

@@ -1,9 +1,5 @@
 import AchievementCard from "@/components/AchievementCard";
-import PhotoGallery from "@/components/PhotoGallery";
 import { Trophy, Award, BookOpen, Users } from "lucide-react";
-import skitImg from '@assets/generated_images/school_skit_performance_photo.png';
-import marchPastImg from '@assets/generated_images/march_past_ceremony_photo.png';
-import volunteeringImg from '@assets/generated_images/volunteering_activity_photo.png';
 
 export default function Achievements() {
   const achievements = [
@@ -51,12 +47,6 @@ export default function Achievements() {
     "Silver medal in throwball at school level, St. Helena's School, Pune (2016)",
   ];
 
-  const photos = [
-    { src: skitImg, alt: 'School skit performance', caption: 'Theatrical Skit Performance' },
-    { src: marchPastImg, alt: 'March past ceremony', caption: 'March Past Ceremony' },
-    { src: volunteeringImg, alt: 'Volunteering activity', caption: 'Community Service & Volunteering' },
-  ];
-
   return (
     <div className="min-h-screen px-8 md:px-16 lg:px-24 py-16">
       <div className="max-w-7xl mx-auto">
@@ -96,10 +86,6 @@ export default function Achievements() {
           </div>
         </section>
 
-        <section>
-          <h2 className="text-3xl font-normal mb-8">School Activities Gallery</h2>
-          <PhotoGallery photos={photos} />
-        </section>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Home, GraduationCap, Briefcase, Code, Award, Wrench, Mail } from "lucide-react";
+import { Home, GraduationCap, Briefcase, Code, Award, Wrench, Mail, Image } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 const navItems = [
@@ -7,6 +7,7 @@ const navItems = [
   { title: "Experience", icon: Briefcase, path: "/experience" },
   { title: "Projects", icon: Code, path: "/projects" },
   { title: "Achievements", icon: Award, path: "/achievements" },
+  { title: "Gallery", icon: Image, path: "/gallery" },
   { title: "Skills", icon: Wrench, path: "/skills" },
   { title: "Contact", icon: Mail, path: "/contact" },
 ];
