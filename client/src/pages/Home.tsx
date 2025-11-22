@@ -33,6 +33,11 @@ export default function Home() {
                   Download Resume
                 </Button>
               </a>
+              <a href="https://www.linkedin.com/in/siddhi-agarkar/" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" data-testid="button-linkedin">
+                  LinkedIn
+                </Button>
+              </a>
             </div>
           </motion.div>
 

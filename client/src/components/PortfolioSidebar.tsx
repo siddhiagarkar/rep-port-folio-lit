@@ -18,8 +18,10 @@ export default function PortfolioSidebar() {
   return (
     <aside className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-border flex flex-col z-50 hidden lg:flex">
       <div className="py-8 px-6 border-b border-border">
-        <div className="w-12 h-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg mb-3" data-testid="logo-sa">
-          SA
+        <div className="mb-3" data-testid="logo-sa">
+          <div className="text-2xl font-light tracking-widest" style={{ letterSpacing: '0.15em' }}>
+            <span className="font-serif" style={{ fontSize: '1.5em', fontStyle: 'italic', fontWeight: '300' }}>S</span><span style={{ fontSize: '0.9em', fontWeight: '300', marginLeft: '-0.1em' }}>A</span>
+          </div>
         </div>
         <p className="text-sm text-muted-foreground tracking-wider uppercase font-light">
           Software Engineer
