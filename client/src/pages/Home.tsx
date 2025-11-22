@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import profileImg from '@assets/generated_images/professional_headshot_portrait.png';
+import profileImg from '@assets/WhatsApp Image 2025-11-22 at 6.41.41 PM (1)_1763820505036.jpeg';
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
               solutions that make a real impact.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <a href="/attached_assets/Siddhi Agarkar_Resume_Review_1763814617656.pdf" download>
+              <a href="/attached_assets/Siddhi Agarkar_Review_1763814617656.pdf" download>
                 <Button size="lg" data-testid="button-download-resume">
                   Download Resume
                 </Button>
