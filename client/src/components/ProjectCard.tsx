@@ -7,19 +7,26 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
+  aspectRatio?: "portrait" | "landscape" | "wide";
 }
 
-export default function ProjectCard({ id, title, description, image }: ProjectCardProps) {
+export default function ProjectCard({ id, title, description, image, aspectRatio = "landscape" }: ProjectCardProps) {
+  const aspectClasses = {
+    portrait: "aspect-[3/4]",
+    landscape: "aspect-[16/10]",
+    wide: "aspect-[2/1]",
+  };
+
   return (
-    <Card className="overflow-hidden hover-elevate transition-all duration-300" data-testid={`card-project-${id}`}>
-      <div className="aspect-[4/5] overflow-hidden bg-slate-50 dark:bg-slate-900">
+    <Card className="overflow-hidden hover-elevate transition-all duration-300 h-full flex flex-col" data-testid={`card-project-${id}`}>
+      <div className={`${aspectClasses[aspectRatio]} overflow-hidden bg-slate-50 dark:bg-slate-900`}>
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>
-      <CardContent className="p-6">
+      <CardContent className="p-6 flex-1">
         <h3 className="text-2xl font-normal mb-3">{title}</h3>
         <p className="text-base text-muted-foreground font-light leading-relaxed">
           {description}

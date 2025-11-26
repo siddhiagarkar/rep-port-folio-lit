@@ -12,24 +12,28 @@ export default function Projects() {
       title: "AI Medical Scheduler",
       description: "Automated doctor appointment scheduling system with AI-powered chat interface and intelligent slot allocation.",
       image: medicalSchedulerImg,
+      aspectRatio: "portrait" as const,
     },
     {
       id: "news-bot",
       title: "News Bot",
       description: "AI-powered news bot that demystifies complex topics with conversational explanations and follow-up questions.",
       image: newsBotImg,
+      aspectRatio: "landscape" as const,
     },
     {
       id: "e-learning-management",
       title: "E-learning Management",
       description: "Scalable web platform connecting volunteer teachers with underprivileged students for online education.",
       image: eLearningImg,
+      aspectRatio: "landscape" as const,
     },
     {
       id: "placement-portal",
       title: "Institute Placement Portal",
       description: "Cloud-based placement portal digitalizing the institute's placement operations with real-time analytics.",
       image: placementPortalImg,
+      aspectRatio: "landscape" as const,
     },
   ];
 
@@ -48,7 +52,7 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
