@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link, useParams } from "wouter";
-import medicalSchedulerImg from '@assets/generated_images/ai_medical_scheduler_interface.png';
+import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
 import newsBotImg from '@assets/generated_images/news_bot_application_interface.png';
 import eLearningImg from '@assets/generated_images/e-learning_management_platform_ui.png';
 import placementPortalImg from '@assets/generated_images/institute_placement_portal_interface.png';
@@ -106,11 +106,11 @@ export default function ProjectDetail() {
             <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-6">
               {project.title}
             </h1>
-            <div className="aspect-video overflow-hidden rounded-lg shadow-md mb-8">
+            <div className="overflow-hidden rounded-lg shadow-md mb-8 flex justify-center bg-slate-50 dark:bg-slate-900">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="max-h-[600px] object-contain"
               />
             </div>
           </div>
