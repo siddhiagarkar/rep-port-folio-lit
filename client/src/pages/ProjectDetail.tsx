@@ -4,7 +4,9 @@ import { ArrowLeft } from "lucide-react";
 import { Link, useParams } from "wouter";
 import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
 import newsBotImg from '@assets/generated_images/news_bot_application_interface.png';
-import eLearningImg from '@assets/generated_images/e-learning_management_platform_ui.png';
+import eLearningImg1 from '@assets/E-Picture1_1764188886879.png';
+import eLearningImg2 from '@assets/EPicture2_1764188886879.png';
+import eLearningImg3 from '@assets/EPicture3_1764188886879.png';
 import placementPortalImg from '@assets/generated_images/institute_placement_portal_interface.png';
 
 const projectsData: Record<string, any> = {
@@ -41,7 +43,8 @@ const projectsData: Record<string, any> = {
   "e-learning-management": {
     title: "E-learning Management",
     period: "January – April 2025",
-    image: eLearningImg,
+    image: eLearningImg1,
+    images: [eLearningImg1, eLearningImg2, eLearningImg3],
     description: "Built a platform to connect volunteer teachers with underprivileged students, enabling teachers to upload tutorials and course materials while creating massive impact on students' lives.",
     features: [
       "Structured learning environment with course creation and management",
@@ -106,13 +109,27 @@ export default function ProjectDetail() {
             <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-6">
               {project.title}
             </h1>
-            <div className="overflow-hidden rounded-lg shadow-md mb-8 flex justify-center bg-slate-50 dark:bg-slate-900">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="max-h-[600px] object-contain"
-              />
-            </div>
+            {project.images ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                {project.images.map((img: string, idx: number) => (
+                  <div key={idx} className="overflow-hidden rounded-lg shadow-md bg-slate-50 dark:bg-slate-900">
+                    <img
+                      src={img}
+                      alt={`${project.title} screenshot ${idx + 1}`}
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="overflow-hidden rounded-lg shadow-md mb-8 flex justify-center bg-slate-50 dark:bg-slate-900">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="max-h-[600px] object-contain"
+                />
+              </div>
+            )}
           </div>
 
           <section>

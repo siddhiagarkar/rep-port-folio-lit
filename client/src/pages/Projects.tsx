@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
 import newsBotImg from '@assets/generated_images/news_bot_application_interface.png';
-import eLearningImg from '@assets/generated_images/e-learning_management_platform_ui.png';
+import eLearningImg from '@assets/E-Picture1_1764188886879.png';
 import placementPortalImg from '@assets/generated_images/institute_placement_portal_interface.png';
 
 export default function Projects() {
