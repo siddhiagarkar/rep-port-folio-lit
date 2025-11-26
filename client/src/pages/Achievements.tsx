@@ -6,6 +6,7 @@ export default function Achievements() {
     "MHT-CET 98.6 Percentile - 99.2% in Mathematics (2021)",
     "JEE Mains 97.1 Percentile - All India Rank 26,984 (2021)",
     "GRE Score 313 - Quant: 161, Verbal: 152",
+    "TOEFL Score 106/120",
     "School Prefect - Leadership and responsibility (2019)",
     "Algorithmic Toolbox Certification - UC San Diego via Coursera (2025)",
   ];

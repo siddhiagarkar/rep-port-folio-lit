@@ -21,7 +21,7 @@ export default function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/siddhi-agarkar/",
+      href: "https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/",
     },
     {
       icon: Github,
@@ -31,7 +31,7 @@ export default function Contact() {
     {
       icon: Globe,
       label: "Portfolio",
-      href: "#",
+      href: "https://beacons.ai/siddhiagarkar",
     },
   ];
 

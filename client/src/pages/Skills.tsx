@@ -78,6 +78,10 @@ export default function Skills() {
               "Claude",
               "Comet",
               "Bolt.AI",
+              "Replit",
+              "Figma",
+              "LangGraph",
+              "LangChain",
             ]}
           />
           <SkillCategory
@@ -87,16 +91,8 @@ export default function Skills() {
             skills={[
               "English",
               "Hindi",
-              "German",
+              "A1 level German",
               "Marathi",
-            ]}
-          />
-          <SkillCategory
-            title="Standardized Tests"
-            icon={Code}
-            accentColor="text-amber-600"
-            skills={[
-              "TOEFL - 106/120",
             ]}
           />
         </motion.div>

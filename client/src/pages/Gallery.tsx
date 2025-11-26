@@ -5,7 +5,6 @@ import speakingImg from '@assets/WhatsApp Image 2025-11-22 at 9.33.11 PM_1763827
 import nitJacketImg from '@assets/WhatsApp Image 2025-11-22 at 9.31.02 PM_1763827867067.jpeg';
 import nitBuildingImg from '@assets/WhatsApp Image 2025-11-22 at 9.29.00 PM_1763827867067.jpeg';
 import posterArtImg from '@assets/WhatsApp Image 2025-11-22 at 9.27.12 PM_1763827867067.jpeg';
-import natureImg from '@assets/WhatsApp Image 2025-11-22 at 9.16.15 PM_1763827867068.jpeg';
 import ropeActivityImg from '@assets/WhatsApp Image 2025-11-22 at 9.14.00 PM_1763827867068.jpeg';
 import schoolSportsImg from '@assets/WhatsApp Image 2025-11-22 at 9.13.12 PM_1763827867068.jpeg';
 import medalImg from '@assets/WhatsApp Image 2025-11-22 at 9.07.29 PM_1763827867069.jpeg';
@@ -14,17 +13,16 @@ import conferenceImg from '@assets/WhatsApp Image 2025-11-22 at 9.10.05 PM_17638
 
 export default function Gallery() {
   const photos = [
-    { src: lectureImg, alt: 'Presenting at lecture hall', caption: 'Open Source Workshop - Mentoring Freshmen' },
-    { src: speakingImg, alt: 'Speaking with microphone', caption: 'LinkedIn Content Creator & Public Speaking' },
-    { src: nitBuildingImg, alt: 'NIT Durgapur campus', caption: 'NIT Durgapur - Campus Life' },
-    { src: nitSignImg, alt: 'NIT Durgapur entrance', caption: 'National Institute of Technology Durgapur' },
-    { src: medalImg, alt: 'Holding athletic medal', caption: 'Athletics Achievement - Medal Win' },
-    { src: schoolSportsImg, alt: 'School sports team', caption: '4x100m Relay Champion - ASHA 2020' },
-    { src: ropeActivityImg, alt: 'Adventure rope activity', caption: 'Rock Climbing & Adventure Sports' },
-    { src: nitJacketImg, alt: 'NIT Durgapur jacket', caption: 'NIT Durgapur - Pride & Identity' },
-    { src: posterArtImg, alt: 'Creative poster art', caption: 'Senior Fest Coordinator - Aarohan 2025' },
-    { src: conferenceImg, alt: 'Conference event', caption: 'Networking & Professional Events' },
-    { src: natureImg, alt: 'Outdoor nature photo', caption: 'Adventure & Outdoor Activities' },
+    { src: lectureImg, alt: 'Presenting at lecture hall', caption: 'Open Source Workshop - Mentoring Freshmen', focusPosition: 'object-[center_20%]' },
+    { src: speakingImg, alt: 'Speaking with microphone', caption: 'LinkedIn Content Creator & Public Speaking', focusPosition: 'object-[center_25%]' },
+    { src: nitBuildingImg, alt: 'NIT Durgapur campus', caption: 'NIT Durgapur - Campus Life', focusPosition: 'object-center' },
+    { src: nitSignImg, alt: 'NIT Durgapur entrance', caption: 'National Institute of Technology Durgapur', focusPosition: 'object-center' },
+    { src: medalImg, alt: 'Holding athletic medal', caption: 'Athletics Achievement - Medal Win', focusPosition: 'object-[center_30%]' },
+    { src: schoolSportsImg, alt: 'School sports team', caption: '4x100m Relay Champion - ASHA 2020', focusPosition: 'object-[center_25%]' },
+    { src: ropeActivityImg, alt: 'Adventure rope activity', caption: 'Rock Climbing & Adventure Sports', focusPosition: 'object-[center_20%]' },
+    { src: nitJacketImg, alt: 'NIT Durgapur jacket', caption: 'NIT Durgapur - Pride & Identity', focusPosition: 'object-[center_30%]' },
+    { src: posterArtImg, alt: 'Creative poster art', caption: 'Senior Fest Coordinator - Aarohan 2025', focusPosition: 'object-center' },
+    { src: conferenceImg, alt: 'Conference event', caption: 'Networking & Professional Events', focusPosition: 'object-[center_30%]' },
   ];
 
   return (

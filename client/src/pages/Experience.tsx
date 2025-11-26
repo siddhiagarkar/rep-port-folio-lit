@@ -34,7 +34,7 @@ export default function Experience() {
             <TimelineItem
               year="September – December 2025"
               title="XtremSoft Technologies, Mumbai"
-              subtitle="Full-Stack Developer Intern"
+              subtitle="Software Development Engineer Intern"
               logo={xtremsoftLogo}
             />
             <div className="ml-12 -mt-8">

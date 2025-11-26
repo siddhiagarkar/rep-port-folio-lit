@@ -17,27 +17,17 @@ export default function Home() {
           >
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide">
-                Siddhi Sunil Agarkar
+                Hey, I am Siddhi
               </h1>
               <p className="text-2xl md:text-3xl text-teal-600 dark:text-teal-400 font-light tracking-wide">
                 Keep Swimming
               </p>
             </div>
             <p className="text-lg text-foreground/80 font-light leading-relaxed max-w-2xl">
-              B.Tech student at NIT Durgapur with experience in full-stack development, 
-              AI/ML systems, and cloud infrastructure. Passionate about building scalable 
-              solutions that make a real impact.
+              Passionate about building scalable solutions that make a real impact. 
+              Experienced in full-stack development, AI/ML systems, and cloud infrastructure.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 pb-12">
-              <a href="/attached_assets/Siddhi Agarkar_Review_1763814617656.pdf" download>
-                <Button 
-                  size="lg" 
-                  data-testid="button-download-resume"
-                  className="bg-primary/90 hover:bg-primary/100 text-white backdrop-blur-sm border border-primary/20 transition-all duration-300 hover:shadow-lg hover:scale-105"
-                >
-                  Download Resume
-                </Button>
-              </a>
               <a href="https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
@@ -94,19 +84,19 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <div className="text-center" data-testid="stat-experience">
-              <div className="text-4xl font-light text-primary mb-2">4+</div>
+              <div className="text-4xl font-light text-primary mb-2">16+</div>
               <div className="text-sm text-muted-foreground tracking-wider uppercase font-light">
                 Years of Education
               </div>
             </div>
             <div className="text-center" data-testid="stat-projects">
-              <div className="text-4xl font-light text-primary mb-2">6+</div>
+              <div className="text-4xl font-light text-primary mb-2">5+</div>
               <div className="text-sm text-muted-foreground tracking-wider uppercase font-light">
                 Major Projects
               </div>
             </div>
             <div className="text-center" data-testid="stat-technologies">
-              <div className="text-4xl font-light text-primary mb-2">15+</div>
+              <div className="text-4xl font-light text-primary mb-2">20+</div>
               <div className="text-sm text-muted-foreground tracking-wider uppercase font-light">
                 Technologies
               </div>
