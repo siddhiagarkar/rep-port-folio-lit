@@ -8,21 +8,19 @@ import posterArtImg from '@assets/WhatsApp Image 2025-11-22 at 9.27.12 PM_176382
 import ropeActivityImg from '@assets/WhatsApp Image 2025-11-22 at 9.14.00 PM_1763827867068.jpeg';
 import schoolSportsImg from '@assets/WhatsApp Image 2025-11-22 at 9.13.12 PM_1763827867068.jpeg';
 import medalImg from '@assets/WhatsApp Image 2025-11-22 at 9.07.29 PM_1763827867069.jpeg';
-import nitSignImg from '@assets/WhatsApp Image 2025-11-22 at 9.06.56 PM_1763827867069.jpeg';
 import conferenceImg from '@assets/WhatsApp Image 2025-11-22 at 9.10.05 PM_1763827867069.jpeg';
 
 export default function Gallery() {
   const photos = [
-    { src: lectureImg, alt: 'Presenting at lecture hall', caption: 'Open Source Workshop - Mentoring Freshmen', focusPosition: 'object-[center_20%]' },
-    { src: speakingImg, alt: 'Speaking with microphone', caption: 'LinkedIn Content Creator & Public Speaking', focusPosition: 'object-[center_25%]' },
-    { src: nitBuildingImg, alt: 'NIT Durgapur campus', caption: 'NIT Durgapur - Campus Life', focusPosition: 'object-center' },
-    { src: nitSignImg, alt: 'NIT Durgapur entrance', caption: 'National Institute of Technology Durgapur', focusPosition: 'object-center' },
-    { src: medalImg, alt: 'Holding athletic medal', caption: 'Athletics Achievement - Medal Win', focusPosition: 'object-[center_30%]' },
-    { src: schoolSportsImg, alt: 'School sports team', caption: '4x100m Relay Champion - ASHA 2020', focusPosition: 'object-[center_25%]' },
-    { src: ropeActivityImg, alt: 'Adventure rope activity', caption: 'Rock Climbing & Adventure Sports', focusPosition: 'object-[center_20%]' },
-    { src: nitJacketImg, alt: 'NIT Durgapur jacket', caption: 'NIT Durgapur - Pride & Identity', focusPosition: 'object-[center_30%]' },
-    { src: posterArtImg, alt: 'Creative poster art', caption: 'Senior Fest Coordinator - Aarohan 2025', focusPosition: 'object-center' },
-    { src: conferenceImg, alt: 'Conference event', caption: 'Networking & Professional Events', focusPosition: 'object-[center_30%]' },
+    { src: lectureImg, alt: 'Mentoring workshop', caption: 'Mentored 150+ freshmen in Git/GitHub workshop', focusPosition: 'object-[center_20%]' },
+    { src: speakingImg, alt: 'Speaking at event', caption: 'Convener at GNU/Linux Users\' Group', focusPosition: 'object-[center_25%]' },
+    { src: nitBuildingImg, alt: 'Adobe office', caption: 'Product Intern at Adobe', focusPosition: 'object-center' },
+    { src: medalImg, alt: 'Marathon finisher', caption: '16km Monsoon Hill Marathon Finisher', focusPosition: 'object-[center_30%]' },
+    { src: schoolSportsImg, alt: 'March past winners', caption: 'March Past Winners in St. Helena\'s School', focusPosition: 'object-[center_15%]' },
+    { src: ropeActivityImg, alt: 'Rock climbing', caption: 'Rock climbing and Adventure', focusPosition: 'object-[center_20%]' },
+    { src: nitJacketImg, alt: 'Athletics meet', caption: 'Represented NIT Durgapur at Inter-NIT Athletics Meet in 100m sprint', focusPosition: 'object-[center_20%]' },
+    { src: posterArtImg, alt: 'Volunteer work', caption: 'Volunteered in the Study Material Preparation for visually-impaired children', focusPosition: 'object-center' },
+    { src: conferenceImg, alt: 'AI Hack Day', caption: 'AI Hack Day, Mumbai', focusPosition: 'object-[center_20%]' },
   ];
 
   return (
