@@ -3,7 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link, useParams } from "wouter";
 import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
-import newsBotImg from '@assets/generated_images/news_bot_application_interface.png';
+import newsBotImg1 from '@assets/Screenshot 2025-11-26 210156_1764189010392.png';
+import newsBotImg2 from '@assets/Screenshot 2025-11-26 210443_1764189010392.png';
 import eLearningImg1 from '@assets/E-Picture1_1764188886879.png';
 import eLearningImg2 from '@assets/EPicture2_1764188886879.png';
 import eLearningImg3 from '@assets/EPicture3_1764188886879.png';
@@ -28,7 +29,8 @@ const projectsData: Record<string, any> = {
   "news-bot": {
     title: "News Bot",
     period: "June – November 2025",
-    image: newsBotImg,
+    image: newsBotImg1,
+    images: [newsBotImg1, newsBotImg2],
     description: "Intended to create a bot to make the concept of reading news friendly and accessible for people with different knowledge levels, and help them move beyond just headlines to gain a thorough understanding.",
     features: [
       "AI-powered explanations of complex news topics in clear, conversational language",
