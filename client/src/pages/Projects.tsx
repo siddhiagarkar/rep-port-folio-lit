@@ -19,7 +19,7 @@ export default function Projects() {
       title: "News Bot",
       description: "AI-powered news bot that demystifies complex topics with conversational explanations and follow-up questions.",
       image: newsBotImg,
-      aspectRatio: "landscape" as const,
+      aspectRatio: "portrait" as const,
     },
     {
       id: "e-learning-management",
