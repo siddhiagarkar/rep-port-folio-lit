@@ -15,12 +15,12 @@ export default function Gallery() {
     { src: lectureImg, alt: 'Mentoring workshop', caption: 'Mentored 150+ freshmen in Git/GitHub workshop', focusPosition: 'object-[center_20%]' },
     { src: speakingImg, alt: 'Speaking at event', caption: 'Convener at GNU/Linux Users\' Group', focusPosition: 'object-[center_25%]' },
     { src: nitBuildingImg, alt: 'Adobe office', caption: 'Product Intern at Adobe', focusPosition: 'object-center' },
-    { src: medalImg, alt: 'Marathon finisher', caption: '16km Monsoon Hill Marathon Finisher', focusPosition: 'object-[center_30%]' },
-    { src: schoolSportsImg, alt: 'March past winners', caption: 'March Past Winners in St. Helena\'s School', focusPosition: 'object-[center_15%]' },
-    { src: ropeActivityImg, alt: 'Rock climbing', caption: 'Rock climbing and Adventure', focusPosition: 'object-[center_20%]' },
-    { src: nitJacketImg, alt: 'Athletics meet', caption: 'Represented NIT Durgapur at Inter-NIT Athletics Meet in 100m sprint', focusPosition: 'object-[center_20%]' },
+    { src: medalImg, alt: 'Marathon finisher', caption: '16km Monsoon Hill Marathon Finisher', focusPosition: 'object-[center_45%]' },
+    { src: schoolSportsImg, alt: 'March past winners', caption: 'March Past Winners in St. Helena\'s School', focusPosition: 'object-[center_35%]' },
+    { src: ropeActivityImg, alt: 'Rock climbing', caption: 'Rock climbing and Adventure', focusPosition: 'object-[center_40%]' },
+    { src: nitJacketImg, alt: 'Athletics meet', caption: 'Represented NIT Durgapur at Inter-NIT Athletics Meet in 100m sprint', focusPosition: 'object-[center_40%]' },
     { src: posterArtImg, alt: 'Volunteer work', caption: 'Volunteered in the Study Material Preparation for visually-impaired children', focusPosition: 'object-center' },
-    { src: conferenceImg, alt: 'AI Hack Day', caption: 'AI Hack Day, Mumbai', focusPosition: 'object-[center_20%]' },
+    { src: conferenceImg, alt: 'AI Hack Day', caption: 'AI Hack Day, Mumbai', focusPosition: 'object-[center_40%]' },
   ];
 
   return (
