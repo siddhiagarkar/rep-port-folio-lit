@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
-import medicalSchedulerImg from '@assets/generated_images/ai_medical_scheduler_interface.png';
+import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
 import newsBotImg from '@assets/generated_images/news_bot_application_interface.png';
 import eLearningImg from '@assets/generated_images/e-learning_management_platform_ui.png';
 import placementPortalImg from '@assets/generated_images/institute_placement_portal_interface.png';
