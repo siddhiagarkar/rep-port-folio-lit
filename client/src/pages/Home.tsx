@@ -23,10 +23,6 @@ export default function Home() {
                 Keep Swimming
               </p>
             </div>
-            <p className="text-lg text-foreground/80 font-light leading-relaxed max-w-2xl">
-              Passionate about building scalable solutions that make a real impact. 
-              Experienced in full-stack development, AI/ML systems, and cloud infrastructure.
-            </p>
             <div className="flex flex-wrap gap-4 pt-4 pb-12">
               <a href="https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/" target="_blank" rel="noopener noreferrer">
                 <Button 

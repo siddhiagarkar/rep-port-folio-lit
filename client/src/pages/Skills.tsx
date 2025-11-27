@@ -91,7 +91,7 @@ export default function Skills() {
             skills={[
               "English",
               "Hindi",
-              "A1 level German",
+              "German (A1)",
               "Marathi",
             ]}
           />
