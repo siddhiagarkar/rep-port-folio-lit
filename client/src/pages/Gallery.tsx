@@ -20,7 +20,7 @@ export default function Gallery() {
     { src: ropeActivityImg, alt: 'Rock climbing', caption: 'Rock climbing and Adventure', focusPosition: 'object-[center_40%]' },
     { src: nitJacketImg, alt: 'Athletics meet', caption: 'Represented NIT Durgapur at Inter-NIT Athletics Meet in 100m sprint', focusPosition: 'object-[center_40%]' },
     { src: posterArtImg, alt: 'Volunteer work', caption: 'Volunteered in the Study Material Preparation for visually-impaired children', focusPosition: 'object-center' },
-    { src: conferenceImg, alt: 'AI Hack Day', caption: 'AI Hack Day, Mumbai', focusPosition: 'object-[center_70%]' },
+    { src: conferenceImg, alt: 'AI Hack Day', caption: 'AI Hack Day, Mumbai', focusPosition: 'object-[center_85%]' },
   ];
 
   return (
