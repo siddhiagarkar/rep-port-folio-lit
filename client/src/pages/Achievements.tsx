@@ -1,6 +1,21 @@
 import { motion } from "framer-motion";
 
 export default function Achievements() {
+  const formatText = (text: string) => {
+    const pattern = /(\d{1,3}(?:,\d{3})*(?:\.\d+)?(?:\+)?%?|\d+\/\d+|\d+\.\d+\s*Percentile|Rank\s*\d{1,3}(?:,\d{3})*|\d+k|\d+-day)/gi;
+    const parts = text.split(pattern);
+    const matches = text.match(pattern) || [];
+    
+    const result: (string | JSX.Element)[] = [];
+    parts.forEach((part, i) => {
+      if (part) result.push(part);
+      if (matches[i]) {
+        result.push(<strong key={i} className="font-semibold">{matches[i]}</strong>);
+      }
+    });
+    return result;
+  };
+
   const achievements = [
     "JEE Advanced Qualified - All India Rank 25,123 (2021)",
     "MHT-CET 98.6 Percentile - 99.2% in Mathematics (2021)",
@@ -61,7 +76,7 @@ export default function Achievements() {
               >
                 <span className="text-primary font-bold text-lg mt-0.5">→</span>
                 <p className="text-lg text-foreground/85 font-light leading-relaxed">
-                  {achievement}
+                  {formatText(achievement)}
                 </p>
               </motion.div>
             ))}
@@ -88,7 +103,7 @@ export default function Achievements() {
               >
                 <span className="text-primary font-bold text-lg mt-0.5">→</span>
                 <p className="text-lg text-foreground/85 font-light leading-relaxed">
-                  {activity}
+                  {formatText(activity)}
                 </p>
               </motion.div>
             ))}
