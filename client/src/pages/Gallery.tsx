@@ -18,7 +18,7 @@ export default function Gallery() {
     { src: medalImg, alt: 'Marathon finisher', caption: '16km Monsoon Hill Marathon Finisher', focusPosition: 'object-[center_45%]' },
     { src: schoolSportsImg, alt: 'March past winners', caption: 'March Past Winners in St. Helena\'s School', focusPosition: 'object-[center_35%]' },
     { src: ropeActivityImg, alt: 'Rock climbing', caption: 'Rock climbing and Adventure', focusPosition: 'object-[center_40%]' },
-    { src: nitJacketImg, alt: 'Athletics meet', caption: 'Represented NIT Durgapur at Inter-NIT Athletics Meet in 100m sprint', focusPosition: 'object-[center_40%]' },
+    { src: nitJacketImg, alt: 'Athletics meet', caption: 'Represented NIT Durgapur at Inter-NIT Athletics Meet in 100m sprint', focusPosition: 'object-[center_55%]' },
     { src: posterArtImg, alt: 'Volunteer work', caption: 'Volunteered in the Study Material Preparation for visually-impaired children', focusPosition: 'object-center' },
     { src: conferenceImg, alt: 'AI Hack Day', caption: 'AI Hack Day, Mumbai', focusPosition: 'object-[center_55%]' },
   ];
