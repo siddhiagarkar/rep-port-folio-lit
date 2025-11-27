@@ -19,9 +19,6 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide">
                 Hey, I am Siddhi
               </h1>
-              <p className="text-2xl md:text-3xl text-teal-600 dark:text-teal-400 font-light tracking-wide">
-                Keep Swimming
-              </p>
             </div>
             <div className="flex flex-wrap gap-4 pt-4 pb-12">
               <a href="https://www.linkedin.com/in/siddhi-sunil-agarkar-56b7a8231/" target="_blank" rel="noopener noreferrer">
