@@ -32,13 +32,13 @@ export default function Achievements() {
   };
 
   const achievements = [
+    "GRE Score 313 - Quant: 161, Verbal: 152 (2025)",
+    "TOEFL Score 106/120 (2025)",
+    "Algorithmic Toolbox Certification - UC San Diego via Coursera (2025)",
     "JEE Advanced Qualified - All India Rank 25,123 (2021)",
     "MHT-CET 98.6 Percentile - 99.2% in Mathematics (2021)",
     "JEE Mains 97.1 Percentile - All India Rank 26,984 (2021)",
     "School Prefect - Leadership and responsibility (2019)",
-    "GRE Score 313 - Quant: 161, Verbal: 152 (2025)",
-    "TOEFL Score 106/120 (2025)",
-    "Algorithmic Toolbox Certification - UC San Diego via Coursera (2025)",
   ];
 
   const activities = [
