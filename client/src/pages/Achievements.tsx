@@ -1,6 +1,36 @@
 import { motion } from "framer-motion";
 
 export default function Achievements() {
+  const formatNumbers = (text: string) => {
+    const pattern = /(\d{1,3}(?:,\d{3})*(?:\.\d+)?(?:\+)?%?|\d+\/\d+|\d+\.\d+k?|\d+k\+?|\d+-day|\d+\+)/g;
+    const parts: (string | JSX.Element)[] = [];
+    let lastIndex = 0;
+    let match;
+    
+    while ((match = pattern.exec(text)) !== null) {
+      const isYearInParens = text.slice(match.index - 1, match.index) === '(' && 
+                              text.slice(match.index + match[0].length, match.index + match[0].length + 1) === ')' &&
+                              match[0].length === 4;
+      
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      
+      if (isYearInParens) {
+        parts.push(match[0]);
+      } else {
+        parts.push(<strong key={match.index} className="font-semibold">{match[0]}</strong>);
+      }
+      lastIndex = match.index + match[0].length;
+    }
+    
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+    
+    return parts;
+  };
+
   const achievements = [
     "JEE Advanced Qualified - All India Rank 25,123 (2021)",
     "MHT-CET 98.6 Percentile - 99.2% in Mathematics (2021)",
@@ -61,7 +91,7 @@ export default function Achievements() {
               >
                 <span className="text-primary font-bold text-lg mt-0.5">→</span>
                 <p className="text-lg text-foreground/85 font-light leading-relaxed">
-                  {achievement}
+                  {formatNumbers(achievement)}
                 </p>
               </motion.div>
             ))}
@@ -88,7 +118,7 @@ export default function Achievements() {
               >
                 <span className="text-primary font-bold text-lg mt-0.5">→</span>
                 <p className="text-lg text-foreground/85 font-light leading-relaxed">
-                  {activity}
+                  {formatNumbers(activity)}
                 </p>
               </motion.div>
             ))}
