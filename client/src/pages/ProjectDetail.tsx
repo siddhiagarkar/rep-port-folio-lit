@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link, useParams } from "wouter";
-import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
+import medicalSchedulerImg from '@assets/attached_assets/Screenshot 2026-01-16 at 12.52.13 PM.png';
 import newsBotImg1 from '@assets/Screenshot 2025-11-26 210156_1764189010392.png';
 import newsBotImg2 from '@assets/Screenshot 2025-11-26 210443_1764189010392.png';
 import eLearningImg1 from '@assets/E-Picture1_1764188886879.png';
