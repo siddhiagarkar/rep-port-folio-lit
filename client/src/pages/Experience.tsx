@@ -145,7 +145,7 @@ export default function Experience() {
               <div className="mt-6">
                 <div className="text-sm text-muted-foreground tracking-wider uppercase font-light mb-3">Tech Stack</div>
                 <div className="flex flex-wrap gap-3">
-                  {["Java", "Spring MVC", "Prometheus", "Grafana", "Maven"].map((tech) => (
+                  {["Microservice", "Java", "Spring MVC", "Prometheus", "Grafana", "Maven", "Metrics", "Monitoring", "Visializations"].map((tech) => (
                     <span key={tech} className="px-3 py-1.5 bg-rose-100 dark:bg-rose-950 text-rose-900 dark:text-rose-100 rounded-full text-xs font-light">
                       {tech}
                     </span>
