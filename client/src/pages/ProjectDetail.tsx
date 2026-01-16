@@ -8,7 +8,7 @@ import newsBotImg2 from '@assets/Screenshot 2025-11-26 210443_1764189010392.png'
 import eLearningImg1 from '@assets/E-Picture1_1764188886879.png';
 import eLearningImg2 from '@assets/EPicture2_1764188886879.png';
 import eLearningImg3 from '@assets/EPicture3_1764188886879.png';
-import placementPortalImg from '@assets/attached_assets/Screenshot 2026-01-16 at 12.52.13 PM.png';
+import placementPortalImg from '@assets/Screenshot 2026-01-16 at 12.52.13 PM.png';
 
 const projectsData: Record<string, any> = {
   "ai-medical-scheduler": {

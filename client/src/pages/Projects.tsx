@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 import medicalSchedulerImg from '@assets/1757482146553_1764150143369.jpeg';
 import newsBotImg from '@assets/Screenshot 2025-11-26 210443_1764189010392.png';
 import eLearningImg from '@assets/E-Picture1_1764188886879.png';
-import placementPortalImg from '@assets/generated_images/attached_assets/Screenshot 2026-01-16 at 11.46.05 AM.png';
+import placementPortalImg from '@assets/Screenshot 2026-01-16 at 11.46.05 AM.png';
 
 export default function Projects() {
   const projects = [
