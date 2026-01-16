@@ -32,9 +32,9 @@ export default function Experience() {
             transition={{ duration: 0.6 }}
           >
             <TimelineItem
-              year="September – December 2025"
+              year="September 2025– Present"
               title="XtremSoft Technologies, Mumbai"
-              subtitle="Software Development Engineer Intern"
+              subtitle="Product Development Intern"
               logo={xtremsoftLogo}
             />
             <div className="ml-12 -mt-8">
@@ -51,7 +51,7 @@ export default function Experience() {
                 <Card className="p-6 bg-gradient-to-br from-green-50 to-green-50/50 dark:from-green-950/30 dark:to-green-950/20 border-green-200 dark:border-green-900">
                   <h3 className="text-lg font-semibold mb-4 text-green-900 dark:text-green-100">Solution</h3>
                   <p className="text-base text-foreground/80 font-light leading-relaxed">
-                    Built full-stack system with AI chat interface, secure dashboards for availability management, and Redis caching for performance.
+                    Designed & built full-stack system with a chat interface, secure role-based dashboards for ticket management, and Redis caching for performance.
                   </p>
                 </Card>
 
@@ -69,7 +69,7 @@ export default function Experience() {
                     </li>
                     <li className="text-sm text-foreground/80 font-light leading-relaxed flex gap-3">
                       <span className="text-blue-600 dark:text-blue-400 font-bold">✓</span>
-                      <span>60% faster system response</span>
+                      <span>99.17% faster system response</span>
                     </li>
                   </ul>
                 </Card>
@@ -98,7 +98,7 @@ export default function Experience() {
             <TimelineItem
               year="May – July 2024"
               title="Adobe, Bangalore"
-              subtitle="Backend Engineering Intern"
+              subtitle="Product Intern"
               logo={adobeLogo}
             />
             <div className="ml-12 -mt-8">
@@ -115,7 +115,7 @@ export default function Experience() {
                 <Card className="p-6 bg-gradient-to-br from-green-50 to-green-50/50 dark:from-green-950/30 dark:to-green-950/20 border-green-200 dark:border-green-900">
                   <h3 className="text-lg font-semibold mb-4 text-green-900 dark:text-green-100">Solution</h3>
                   <p className="text-base text-foreground/80 font-light leading-relaxed">
-                    Deployed optimized Prometheus monitoring system with custom Grafana dashboards and histogram metrics for latency tracking.
+                    Deployed optimized Prometheus monitoring system with custom Grafana dashboards and histogram metrics for latency tracking of APIs.
                   </p>
                 </Card>
 
@@ -125,15 +125,15 @@ export default function Experience() {
                   <ul className="space-y-2">
                     <li className="text-sm text-foreground/80 font-light leading-relaxed flex gap-3">
                       <span className="text-blue-600 dark:text-blue-400 font-bold">✓</span>
-                      <span>40% boost in query speed</span>
+                      <span>98.3% boost in query speed</span>
                     </li>
-                    <li className="text-sm text-foreground/80 font-light leading-relaxed flex gap-3">
+                    {/* <li className="text-sm text-foreground/80 font-light leading-relaxed flex gap-3">
                       <span className="text-blue-600 dark:text-blue-400 font-bold">✓</span>
                       <span>30% reduction in infrastructure costs</span>
-                    </li>
+                    </li> */}
                     <li className="text-sm text-foreground/80 font-light leading-relaxed flex gap-3">
                       <span className="text-blue-600 dark:text-blue-400 font-bold">✓</span>
-                      <span>6× extension of data retention</span>
+                      <span>8× extension of data retention</span>
                     </li>
                     <li className="text-sm text-foreground/80 font-light leading-relaxed flex gap-3">
                       <span className="text-blue-600 dark:text-blue-400 font-bold">✓</span>
