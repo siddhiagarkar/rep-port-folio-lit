@@ -49,6 +49,7 @@ export default function Achievements() {
     "GNU/Linux Users' Group Convener - NIT Durgapur (2024-2025)",
     "Athletics Team Captain - Inter-NIT Athletics Meet (2024)",
     "Open Source Workshop Mentor - Mentored 150+ freshmen in Git and GitHub (2023)",
+    "Open Source Contributor - Successful Hacktoberfest contributions (2022)",
     "Dance Performance - Special mention at NIT's Got Talent (2022)",
     "4x100m Relay Champion - First position at ASHA, Resonance Eduventures, Kota (2020)",
     "Throwball Silver Medalist - St. Helena's School, Pune (2016)",
